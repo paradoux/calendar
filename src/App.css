@@ -1,0 +1,17 @@
+.days{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.cells{
+  display: flex;
+  flex-direction: row;
+}
+
+.cell{
+  height: 50px;
+  width: 50px;
+  border: solid 1px black;
+}
