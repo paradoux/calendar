@@ -1,0 +1,98 @@
+.App {
+  background: #51e2c0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: grey;
+  font-size: 35px;
+  width: 35px;
+}
+
+.centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:focus {
+  outline: none;
+}
+
+.calendar {
+  background: white;
+  border-radius: 3px;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.months {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.month__name {
+  font-size: 30px;
+  color: black;
+}
+
+.weeks {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.day {
+  text-align: center;
+}
+
+.day__name {
+  font-size: 18px;
+  color: grey;
+}
+
+.day__cells {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.cell {
+  margin: 2px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.cell > p {
+  font-size: 17px;
+  font-weight: bolder;
+  color: #343434;
+}
+
+.cell:hover {
+  background: #51e2c0;
+  transition: 0.85;
+  border-radius: 3px;
+}
+
+.cell:hover > p {
+  color: white;
+}
+
+.cell:active {
+  background: #51e2c0;
+}
+
+.cell > p {
+  margin: auto;
+}
